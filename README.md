@@ -24,6 +24,7 @@ Este é um projeto simples e interativo para realizar sorteios de Amigo Secreto.
 3. Os nomes serão exibidos em uma lista.
 4. Clique em "Sortear Amigo" para escolher um nome aleatoriamente.
 5. O nome sorteado será exibido na tela.
+6. site está no ar em https://marlusvinhal.github.io/Challenge_Amigo_Secreto/
 
 ## 📂 Estrutura do Projeto
 
@@ -40,7 +41,7 @@ Este é um projeto simples e interativo para realizar sorteios de Amigo Secreto.
 - Animações na exibição do nome sorteado.
 - Opção para remover nomes da lista.
 - Interface aprimorada com efeitos visuais melhorados.
-
+    
 ## 📝 Licença
 
 Este projeto é de código aberto e pode ser usado livremente para aprendizado e melhoria pessoal.
