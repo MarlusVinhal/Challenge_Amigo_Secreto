@@ -1,0 +1,169 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+h2 {
+    display: none;/* ocultação do h2 */
+}
+
+/* Estiliza o corpo da página */
+body {
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    display: flex;
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    align-items: center; /* Centraliza na vertical */
+    height: 100vh; /* Altura total da tela */
+}
+
+/* Estiliza a caixa principal */
+.container {
+    background: #ffffff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    width: 350px; /* Largura fixa */
+}
+
+/* Estiliza o título */
+h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Estiliza o grupo de entrada */
+.input-group {
+    display: flex;
+    gap: 10px; /* Espaçamento entre o input e o botão */
+}
+
+/* Estiliza o campo de entrada */
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estiliza os botões */
+button {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul mais escuro no hover */
+}
+
+/* Estiliza a lista de amigos */
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+/* Estiliza os itens da lista */
+ul li {
+    background: #eee;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estiliza o botão de remover */
+.remove-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header {
+    
+    text-align: center;
+}
+.remove-button:hover {
+    background: darkred;
+}
+
+/* Estiliza o botão de sortear */
+.btn-sortear {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estiliza o botão de reiniciar */
+.btn-reiniciar {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #ff0000; /* Vermelho */
+}
+
+.btn-reiniciar:hover {
+    background-color: #cc0000;
+}
+
+/* Estiliza o resultado do sorteio */
+#resultadoSorteio {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+}
+/*  RESPONSIVIDADE  */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        max-width: 90%; /* Maior aproveitamento do espaço */
+    }
+    img {
+        display:none;/* Retirada da imagem */
+    }
+    h1 {
+        display: none; /* Retirada do h1 para inclusão do h2 */
+    }
+    h2 {
+
+        display: block; /* Mostra h2 dentro da div principal*/
+        
+    }
+    input {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+
+    button {
+        font-size: 14px; /* Deixa os botões mais adaptáveis */
+        padding: 8px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 450px; /* Ajuste para tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 500px; /* Ajuste para telas grandes */
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <title>Sorteio Amigo Secreto</title> <!-- Título da página -->
+    <link rel="stylesheet" href="styles/style.css"> <!-- Importa o arquivo CSS -->
+</head>
+<body>
+   
+        <header class="header-banner">
+            <h1 class="main-title">Jogo do Amigo Secreto</h1><!-- Título principal -->
+
+            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
+        </header>
+    <div class="container"> <!-- Div principal que engloba todo o conteúdo -->
+        <h2>Jogo do Amigo Secreto</h2>
+        <!-- Campo de entrada e botão para adicionar amigos -->
+        <div class="input-group">
+            <input type="text" id="nomeAmigo" placeholder="Digite o nome do amigo"> <!-- Campo de entrada -->
+            <button id="btnAdicionar">Adicionar</button> <!-- Botão para adicionar nomes -->
+        </div>
+
+        <ul id="listaAmigos"></ul> <!-- Lista onde os nomes serão exibidos -->
+
+        <!-- Botões de ação -->
+        <button id="btnSortear" class="btn-sortear">Sortear Amigo</button> <!-- Botão para sortear -->
+        <button id="btnReiniciar" class="btn-reiniciar">Reiniciar</button> <!-- Novo botão para reiniciar -->
+
+        <p id="resultadoSorteio"></p> <!-- Local onde o resultado do sorteio será exibido -->
+    </div>
+
+    <script src="scripts/script.js"></script> <!-- Importa o JavaScript -->
+</body>
+</html>
